@@ -85,10 +85,10 @@ resource "azurerm_virtual_machine" "vm" {
   vm_size               = "Standard_B1s"
 
   storage_os_disk {
-    name              = "myOsDisk"
+    name              = "mytest-default-disk"
     caching           = "ReadWrite"
     create_option     = "FromImage"
-    managed_disk_type = "Premium_LRS"
+    managed_disk_type = "Standard_LRS"
   }
 
   storage_image_reference {
